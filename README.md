@@ -51,6 +51,7 @@ NLP Project for Classifying Disclosure and Non-Disclosure
 * So far the model shows **98.7% accuracy**
 * Also, I made a **Predict** function to test the learned model using custom content by a text file. 
 
-### Further Progress
+### Considering
 
-Though the Model shows great accuracy but I was able to make it fool by providing `Bag of Words` situation. This means, it still depends on `Keywords`. In the next phase I will use `LSTM` to train it in a more contextual way.
+* Diagnosis of **Overfitting**. Though, I don't think its Overfitted now because the accuracy metrics is based on the Test data which is unseen to the Model while training. Data are highly biased, so this result was supposed to happen.
+* Using LSTM for sequence classification, Dropout for regularization. 
